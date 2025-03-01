@@ -1,0 +1,54 @@
+*{
+    font-family: "Playfair Display", serif;
+}
+
+/* Logotipo */
+
+.logotipoEstudio{
+    width: 110px;
+    color: rgb(255, 240, 240);
+}
+/*header*/
+
+.headerInicio{
+ background-image: url(../Img/1.jpg);
+ background-size: cover;
+ background-attachment: fixed;
+ height: 95vh;
+}
+.listaHeader{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.contenedorSuperior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.062);
+    backdrop-filter: blur(10px);
+   
+}
+
+.contenedorSuperior nav ul li{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    padding: 11px;
+    text-decoration: none;
+}
+
+.textoInicio{
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 260px;
+    background-color: rgba(0, 0, 0, 0.034);
+    color: rgba(255, 255, 255, 0.733);
+    text-align: center;
+}
+
