@@ -14,7 +14,7 @@
  background-image: url(../Img/1.jpg);
  background-size: cover;
  background-attachment: fixed;
- height: 95vh;
+ height: 95rem;
 }
 .listaHeader{
     list-style: none;
@@ -47,8 +47,123 @@
     flex-direction: column;
     justify-content: center;
     height: 260px;
-    background-color: rgba(0, 0, 0, 0.034);
     color: rgba(255, 255, 255, 0.733);
     text-align: center;
 }
 
+.textoMedio{
+    color: brown;
+align-items: center;
+}
+
+/*FONDO CONTACTO*/
+
+.fondoContacto{
+    background-image: linear-gradient(to right, rgb(73, 73, 73), rgb(160, 160, 160));
+ 
+    
+}
+
+/*GRID EN CONTACTANOS*/
+
+.contenedorCajas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    ". . ."
+    ". caja1 caja2"
+    ". caja3 .";
+}
+
+.caja1{
+grid-area: caja1;
+}
+.caja2{
+grid-area: caja2;
+}
+.caja3{
+    grid-area: caja3;
+}
+
+.horarios{
+    text-align: left;
+    padding: 15px;
+}
+
+
+/* Carrousel */
+
+.carrousel{
+    width: 100vh;
+}
+
+/* Imagenes de abogados*/
+
+.colorPablo{
+    background-color: rgb(128, 128, 128);
+    width: 26rem;
+    border-radius: 0.5rem;
+
+}
+
+.colorMaria{
+    background-color: rgb(199, 199, 199);
+    width: 26rem;
+    border-radius: 0.5rem;
+
+}
+.tarjetaPablo{
+    width: 400px;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.tarjetaMaria{
+    width: 400px;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+/* ------------------------Media Query--------------------------------*/
+
+@media (max-width:500px){
+    .logotipoEstudio{
+        width: 50px;
+    }
+
+    .headerInicio{
+        background-image: url(../Img/1.jpg);
+       width: max-content;
+        height: 22rem;
+}        
+.carrousel{
+    width: 50vh;
+}
+
+}
+.contenedorSuperior nav ul li{
+    font-weight: 800;
+    padding: 1px;
+    
+}
+.tarjetaPablo{
+    width: 280px;
+   
+}
+
+.tarjetaMaria{
+    width: 280px;
+  
+}
+.colorPablo{
+    width: 19rem;
+    
+
+}
+
+.colorMaria{
+    width: 19rem;
+}
