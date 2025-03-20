@@ -1,0 +1,46 @@
+
+%Background{
+    width: 26rem;
+    border-radius: 0.5rem; 
+}
+
+%FormaTarjeta{
+    width: 400px;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.bodyQuienes{
+    background-image: url(/Img/asd.jpg);
+    background-size: cover;
+}
+
+.colorPablo{
+    
+    margin-left: 40;
+    background-color: rgb(128, 128, 128);
+    @extend %Background;
+    
+    
+  
+}
+
+.colorMaria{
+    background-color: rgb(199, 199, 199);
+   @extend %Background;
+    
+
+}
+
+.tarjetaPablo{ 
+    
+    background-color: unset;
+    @extend %FormaTarjeta; 
+}
+
+.tarjetaMaria{
+    background-color:unset;
+    @extend %FormaTarjeta;
+}
+

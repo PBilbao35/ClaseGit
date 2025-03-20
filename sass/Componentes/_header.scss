@@ -1,0 +1,67 @@
+*{
+    font-family: "Playfair Display", serif;
+}
+
+.logotipoEstudio{
+    width: 110px;
+    color: rgb(255, 240, 240);
+}
+
+
+.headerInicio{
+    background-image: url(/Img/1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 95rem;
+
+}
+
+.listaHeader{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.contenedorSuperior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.062);
+    backdrop-filter: blur(10px);
+   
+}
+
+.contenedorSuperior nav ul li{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    padding: 11px;
+    text-decoration: none;
+}
+
+.textoInicio{
+    
+    width: 500px;
+    margin: 0 auto;
+    flex-direction:column;
+    height: 260px;
+    color: rgb(0, 132, 255);
+    text-align: center;
+    font-weight: bold;
+    @extend %FlexBasico
+}
+
+
+.textoMedio{
+
+    color: brown;
+    align-items: center;
+    @extend %FlexBasico
+    
+}
+
+%FlexBasico{
+    display: flex;
+    justify-content: center;
+}

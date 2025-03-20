@@ -1,0 +1,56 @@
+.contenedorCajas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    ". . ."
+    ". caja1 caja2"
+    ". caja3 .";
+}
+
+.caja1{
+grid-area: caja1;
+}
+.caja2{
+grid-area: caja2;
+}
+.caja3{
+    grid-area: caja3;
+}
+
+.horarios{
+    text-align: left;
+    padding: 15px;
+}
+
+.fondoContacto{
+    background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.caja1{
+    animation-name: entrada;
+    animation-duration: 1s;
+    animation-iteration-count: 2s;
+    animation-delay: 0.3s;
+}
+
+.caja2{
+    animation-name: suma;
+    animation-duration: 5s;
+    animation-iteration-count: 2s;
+    animation-delay: 0.3s;
+}
+
+@keyframes entrada{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+@keyframes suma{
+    0%{opacity: 0%;}
+    50%{transform:rotate(360deg);opacity: 50%;}
+    100%{opacity: 100%;}
+}
