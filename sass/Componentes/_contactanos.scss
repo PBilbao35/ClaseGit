@@ -1,3 +1,13 @@
+.consultatexto{
+    display: grid;
+    text-align: left;
+    grid-column: 1;
+}
+
+
+
+
+
 .contenedorCajas{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
