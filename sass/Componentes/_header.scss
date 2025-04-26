@@ -25,6 +25,8 @@
 }
 
 .listaHeader{
+text-decoration: none;
+    position: relative;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -37,16 +39,25 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.062);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(70px);
+    border-radius: 10px;
    
 }
 
 .contenedorSuperior nav ul li{
+    display: flex;
+    justify-content: space-between;
     color: rgb(0, 0, 0);
     font-weight: 800;
     padding: 11px;
-    text-decoration: none;
+   
 }
+nav a{
+    text-decoration: none;
+  }
+  nav a:hover{
+    color: white;
+  }
 
 .textoInicio{
     
@@ -54,11 +65,13 @@
     margin: 0 auto;
     flex-direction:column;
     height: 260px;
-    color: rgb(0, 132, 255);
+    color: rgb(0, 255, 255);
     text-align: center;
     font-weight: bold;
     margin-top: 100px;
-    @extend %FlexBasico
+    background-color: rgba(250, 235, 215, 0.116);
+    backdrop-filter: blur (10px);
+    @extend %FlexBasico;
     
 
 }
